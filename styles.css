@@ -1,0 +1,202 @@
+/* Laptop Version */
+
+body {
+   margin: 0 auto;
+   color: black;
+   text-align: center;
+   background-color: #f5f5f5;
+   font-family: 'Poppins', Verdana, Arial, sans-serif;
+} 
+
+a {
+   color: black;
+   text-decoration: underline;
+}
+
+a:hover {
+   color: #9932CC;
+}
+
+a:active {
+   color: blue;
+}
+
+h1, h2, h3, h4, p {
+   margin: 0;
+   padding: 8px; 
+}
+
+.header {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   font-size: 32px;
+   border: 4px solid black;
+}
+
+.navbar {
+   display: flex;
+   justify-content: space-between;
+   margin: 8px 10%;
+   font-size: 22px;
+   padding-left: 50px;
+   padding-right: 50px;
+   width: 26%;
+}
+
+#mission {
+   margin-top: 0.3px;
+   display: flex;
+   min-height: 450px;
+   background-image: url('images/balls-nathan-rogers-ObhCU6Vhoe8-unsplash.jpg');
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   padding-top: 34px;
+   padding-bottom: 34px;
+}
+
+#mission .content {
+   margin: auto;
+   background-color: #f5f5f5;
+   width: 100%;
+}
+
+#mission h2 {
+   font-size: 34px;
+}
+
+#mission h4 {
+   font-size: 20px;
+}
+
+#products {
+   margin: auto;
+   min-height: 600px;
+   padding-top: 30px;
+   padding-bottom: 30px;
+}
+
+#products h2 {
+   font-size: 34px;
+}
+
+#products h4 {
+   font-size: 20px;
+}
+
+.products-container {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+
+.product {
+   flex-direction: row;
+}
+
+.product img {
+   margin-left: auto;
+   margin-right: auto;
+   width: 300px;
+   height: 380px;
+   padding: 20px;
+}
+
+.product p {
+   font-weight: bold;
+   font-size: 28px;
+}
+
+#team {  
+   margin: auto;
+   min-height: 600px;
+   padding-top: 80px;
+   padding-bottom: 80px;
+   background-image: url('images/stadium-alex-motoc-7NhFrPxlgM8-unsplash.jpg');
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   color: white;
+   font-size: 34px;
+}
+
+#team h2 {
+   background-color: rgb(0, 0, 0, 0.6);
+   box-sizing: content-box;
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: 20px;
+   width: 350px;
+   padding: 16px;
+}
+
+.team-container {
+   display: flex;
+   align-items: center; 
+   justify-content: space-around;
+}
+
+.teammate {
+   flex-direction: row;
+}
+
+.teammate img {
+   margin-left: auto;
+   margin-right: auto;
+   width: 300px;
+   height: 400px;
+   padding: 0;
+   border: 4px solid black;
+}
+
+.teammate h3 {
+   font-size: 26px;
+   color: white;
+   background-color: rgb(0, 0, 0, 0.6);
+}
+
+.teammate p {
+   font-size: 18px;
+   color: white;
+   background-color: rgb(0, 0, 0, 0.6);
+}
+
+.footer {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   background-color: #9932CC;
+   color: white;
+   padding-top: 30px;
+}
+
+/* Mobile Version */
+
+@media screen and (max-width: 600px) {
+   .main {
+      flex-direction: column;
+      flex-shrink: inherit;
+      flex: 1;
+   }
+
+   .navbar {
+      display: inline-block;
+   }
+
+   .products-container {
+      flex-wrap: wrap;
+   }
+
+   #team h2 {
+      max-width: fit-content;
+   }
+
+   .team-container {
+      flex-wrap: wrap;
+   }
+
+   .teammate {
+      margin-top: 1em;
+   }
+}
